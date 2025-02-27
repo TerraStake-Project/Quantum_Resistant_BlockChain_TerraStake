@@ -1,0 +1,96 @@
+quantum-resistant-blockchain/
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md
+│   │   └── feature_request.md
+│   └── workflows/
+│       ├── build.yml
+│       └── test.yml
+├── cmd/
+│   ├── node/
+│   │   └── main.go
+│   └── cli/
+│       └── main.go
+├── config/
+│   └── network_params.yaml
+├── core/
+│   ├── block/
+│   │   ├── block.go
+│   │   └── header.go
+│   ├── chain/
+│   │   ├── blockchain.go
+│   │   └── validator.go
+│   ├── consensus/
+│   │   ├── mechanism.go
+│   │   └── pos.go
+│   ├── crypto/
+│   │   ├── quantum/
+│   │   │   ├── dilithium/
+│   │   │   │   ├── dilithium.go
+│   │   │   │   └── params.go
+│   │   │   ├── falcon/
+│   │   │   │   ├── falcon.go
+│   │   │   │   └── params.go
+│   │   │   ├── sphincsplus/
+│   │   │   │   ├── sphincsplus.go
+│   │   │   │   └── params.go
+│   │   │   └── kyber/
+│   │   │       ├── kyber.go
+│   │   │       └── params.go
+│   │   ├── hash.go
+│   │   ├── keys.go
+│   │   └── signature.go
+│   ├── mempool/
+│   │   └── mempool.go
+│   ├── storage/
+│   │   ├── database.go
+│   │   └── leveldb.go
+│   └── transaction/
+│       ├── transaction.go
+│       └── validation.go
+├── docs/
+│   ├── architecture.md
+│   ├── getting_started.md
+│   ├── pqc_algorithms.md
+│   ├── api/
+│   │   └── openapi.yaml
+│   └── images/
+├── internal/
+│   └── utils/
+│       ├── logger.go
+│       └── serialization.go
+├── network/
+│   ├── discovery.go
+│   ├── peer.go
+│   ├── protocol.go
+│   └── sync.go
+├── p2p/
+│   ├── connection.go
+│   ├── message.go
+│   ├── node.go
+│   └── transport.go
+├── rpc/
+│   ├── api.go
+│   ├── client.go
+│   ├── server.go
+│   └── services/
+│       ├── account.go
+│       ├── block.go
+│       └── transaction.go
+├── tests/
+│   ├── integration/
+│   │   ├── consensus_test.go
+│   │   └── network_test.go
+│   └── unit/
+│       ├── crypto_test.go
+│       └── transaction_test.go
+├── wallet/
+│   ├── account.go
+│   ├── keystore.go
+│   └── transaction.go
+├── .gitignore
+├── go.mod
+├── go.sum
+├── LICENSE
+├── Makefile
+└── README.md
